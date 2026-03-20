@@ -19,7 +19,41 @@
         "cells": [
           {
             "position": {
-              "x": 515,
+              "x": 130,
+              "y": 220.0000000000001
+            },
+            "size": {
+              "width": 160,
+              "height": 240
+            },
+            "attrs": {
+              "label": {
+                "text": "Internet"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "aba40a0c-1fc2-4961-a746-cb5fdb472eec",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "278db862-e287-430c-afd7-09ef3a4c789e",
+                "e74a46fd-bb38-499c-a43f-2cec959b5d48"
+              ],
+              "containedElements": [
+                "3b0adfa3-3d26-49a3-a0ca-272845189f03",
+                "d35ce783-37e6-481c-a11b-a633b815e9c3"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 520,
               "y": 240
             },
             "size": {
@@ -507,7 +541,7 @@
           },
           {
             "position": {
-              "x": 177.5,
+              "x": 153.75,
               "y": 370
             },
             "size": {
@@ -794,7 +828,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "aba40a0c-1fc2-4961-a746-cb5fdb472eec"
+              ]
             },
             "labels": [
               "API Request with JNDI syntax"
@@ -841,7 +877,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "aba40a0c-1fc2-4961-a746-cb5fdb472eec"
+              ]
             },
             "labels": [
               "API Request"
@@ -1075,7 +1113,7 @@
           },
           {
             "position": {
-              "x": 177.5,
+              "x": 153.75,
               "y": 265
             },
             "size": {
