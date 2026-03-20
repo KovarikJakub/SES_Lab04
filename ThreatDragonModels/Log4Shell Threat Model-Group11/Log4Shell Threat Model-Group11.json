@@ -53,6 +53,44 @@
           },
           {
             "position": {
+              "x": 499.9999999999998,
+              "y": 18.000000000000256
+            },
+            "size": {
+              "width": 750,
+              "height": 350
+            },
+            "attrs": {
+              "label": {
+                "text": "Application Environment"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "a2e8dce5-c158-41c5-a864-bf44ff8b992e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Application Environment",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "278db862-e287-430c-afd7-09ef3a4c789e",
+                "e74a46fd-bb38-499c-a43f-2cec959b5d48",
+                "c21b7735-6862-4bdf-97f9-5c0cdff5e1ce",
+                "bd709775-ba25-4895-a2dc-d7d603313f62"
+              ],
+              "containedElements": [
+                "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
+                "9399af87-7a58-429d-95c8-6900927c83ff",
+                "3f2884c3-c0db-40dc-8cce-5228940e2d64",
+                "fba96bd2-536d-4d67-bc54-894498c3415e"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 520,
               "y": 240
             },
@@ -829,7 +867,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "aba40a0c-1fc2-4961-a746-cb5fdb472eec"
+                "aba40a0c-1fc2-4961-a746-cb5fdb472eec",
+                "a2e8dce5-c158-41c5-a864-bf44ff8b992e"
               ]
             },
             "labels": [
@@ -878,7 +917,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "aba40a0c-1fc2-4961-a746-cb5fdb472eec"
+                "aba40a0c-1fc2-4961-a746-cb5fdb472eec",
+                "a2e8dce5-c158-41c5-a864-bf44ff8b992e"
               ]
             },
             "labels": [
@@ -926,7 +966,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a2e8dce5-c158-41c5-a864-bf44ff8b992e"
+              ]
             },
             "labels": [
               "JNDI lookup"
@@ -973,7 +1015,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a2e8dce5-c158-41c5-a864-bf44ff8b992e"
+              ]
             },
             "labels": [
               "Payload with attacker executable"
