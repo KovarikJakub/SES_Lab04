@@ -79,7 +79,7 @@
                 "278db862-e287-430c-afd7-09ef3a4c789e",
                 "e74a46fd-bb38-499c-a43f-2cec959b5d48",
                 "c21b7735-6862-4bdf-97f9-5c0cdff5e1ce",
-                "bd709775-ba25-4895-a2dc-d7d603313f62"
+                "a48d92c6-6556-4faf-9dab-42f4e01b71a9"
               ],
               "containedElements": [
                 "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
@@ -1020,9 +1020,9 @@
               ]
             },
             "labels": [
-              "Payload with attacker executable"
+              "Payload with attackers executable"
             ],
-            "id": "bd709775-ba25-4895-a2dc-d7d603313f62",
+            "id": "a48d92c6-6556-4faf-9dab-42f4e01b71a9",
             "source": {
               "cell": "11eecd3c-2a51-49f6-8cd1-42a6e8810952",
               "port": "4f8c5641-c290-4098-87b7-f6f4e245e0bc"
@@ -1033,15 +1033,15 @@
             },
             "vertices": [
               {
-                "x": 1000,
-                "y": 420
+                "x": 990,
+                "y": 540
               }
             ]
           },
           {
             "position": {
               "x": 684.9999999999975,
-              "y": 480
+              "y": 520
             },
             "size": {
               "width": 220,
