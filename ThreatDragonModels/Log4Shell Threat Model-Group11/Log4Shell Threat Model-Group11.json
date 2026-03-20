@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 80,
-              "y": 100
+              "x": 70,
+              "y": 260
             },
             "size": {
               "width": 220,
@@ -136,8 +136,8 @@
           },
           {
             "position": {
-              "x": 525,
-              "y": 80
+              "x": 515,
+              "y": 240
             },
             "size": {
               "width": 100,
@@ -256,16 +256,16 @@
           },
           {
             "position": {
-              "x": 1050,
-              "y": 90
+              "x": 1000,
+              "y": 270
             },
             "size": {
               "width": 220,
-              "height": 90
+              "height": 50
             },
             "attrs": {
               "text": {
-                "text": "Application Logs📄\n"
+                "text": "Application Logs📃"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -364,7 +364,7 @@
             "zIndex": 4,
             "data": {
               "type": "tm.Store",
-              "name": "Application Logs📄\n",
+              "name": "Application Logs📃",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -380,16 +380,16 @@
           },
           {
             "position": {
-              "x": 1030,
-              "y": 380
+              "x": 689.9999999999975,
+              "y": 90.00000000000023
             },
             "size": {
               "width": 210,
-              "height": 130
+              "height": 50
             },
             "attrs": {
               "text": {
-                "text": "App Configurationcog⚙️"
+                "text": "App Configuration⚙️"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -488,7 +488,7 @@
             "zIndex": 5,
             "data": {
               "type": "tm.Store",
-              "name": "App Configurationcog⚙️",
+              "name": "App Configuration⚙️",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -504,8 +504,8 @@
           },
           {
             "position": {
-              "x": 749.9999999999975,
-              "y": 75
+              "x": 739.9999999999975,
+              "y": 235
             },
             "size": {
               "width": 110,
@@ -624,8 +624,8 @@
           },
           {
             "position": {
-              "x": 340,
-              "y": 380
+              "x": 177.5,
+              "y": 370
             },
             "size": {
               "width": 112.5,
@@ -633,7 +633,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Attacker😈"
+                "text": "Attacker😈💻"
               },
               "body": {
                 "stroke": "#333333",
@@ -729,7 +729,7 @@
             "zIndex": 7,
             "data": {
               "type": "tm.Actor",
-              "name": "Attacker😈",
+              "name": "Attacker😈💻",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -784,12 +784,7 @@
               "cell": "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
               "port": "a5ccb4a5-1afc-4256-92c4-1e6b5ebd9821"
             },
-            "vertices": [
-              {
-                "x": 470,
-                "y": 135
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -837,6 +832,264 @@
               "port": "a5ccb4a5-1afc-4256-92c4-1e6b5ebd9821"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Raw log string",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Raw log string"
+            ],
+            "id": "b29aa7e4-166d-4020-94c4-42587a5893da",
+            "source": {
+              "cell": "fba96bd2-536d-4d67-bc54-894498c3415e",
+              "port": "1d359333-4c47-463f-9d05-8595571ab991"
+            },
+            "target": {
+              "cell": "9399af87-7a58-429d-95c8-6900927c83ff",
+              "port": "02145787-d8ed-4463-8851-446fd478c216"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Enable/Disable JNDI Lookups",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Enable/Disable JNDI Lookups"
+            ],
+            "id": "0280fc5a-c891-4868-be3b-63cdc2c9793f",
+            "source": {
+              "cell": "3f2884c3-c0db-40dc-8cce-5228940e2d64",
+              "port": "74c6df63-ca28-4871-b923-10edab3e780c"
+            },
+            "target": {
+              "cell": "fba96bd2-536d-4d67-bc54-894498c3415e",
+              "port": "28f77e07-955f-4967-a02d-6f1e5f92361b"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "API Request with JNDI syntax",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "API Request with JNDI syntax"
+            ],
+            "id": "278db862-e287-430c-afd7-09ef3a4c789e",
+            "source": {
+              "cell": "3b0adfa3-3d26-49a3-a0ca-272845189f03",
+              "port": "4f8c5641-c290-4098-87b7-f6f4e245e0bc"
+            },
+            "target": {
+              "cell": "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
+              "port": "a5ccb4a5-1afc-4256-92c4-1e6b5ebd9821"
+            },
+            "vertices": []
+          },
+          {
+            "position": {
+              "x": 455,
+              "y": 460
+            },
+            "size": {
+              "width": 220,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Attacker-Controlled Server😈🗄️"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "58a59ea9-69f4-42d5-b1ff-837b8b4e2d1b"
+                },
+                {
+                  "group": "right",
+                  "id": "4f8c5641-c290-4098-87b7-f6f4e245e0bc"
+                },
+                {
+                  "group": "bottom",
+                  "id": "53aa3c02-5a4e-43eb-bf3d-df726924ea03"
+                },
+                {
+                  "group": "left",
+                  "id": "6aa5c855-39f0-4f9f-8407-f22d51c902f9"
+                }
+              ]
+            },
+            "id": "11eecd3c-2a51-49f6-8cd1-42a6e8810952",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Attacker-Controlled Server😈🗄️",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
           }
         ]
       }
