@@ -79,7 +79,7 @@
                 "278db862-e287-430c-afd7-09ef3a4c789e",
                 "e74a46fd-bb38-499c-a43f-2cec959b5d48",
                 "c21b7735-6862-4bdf-97f9-5c0cdff5e1ce",
-                "bd709775-ba25-4895-a2dc-d7d603313f62"
+                "a48d92c6-6556-4faf-9dab-42f4e01b71a9"
               ],
               "containedElements": [
                 "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
@@ -87,13 +87,6 @@
                 "3f2884c3-c0db-40dc-8cce-5228940e2d64",
                 "fba96bd2-536d-4d67-bc54-894498c3415e"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -204,7 +197,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Application🌐",
-              "description": "Web App\n",
+              "description": "A legitimate Web app running on the Internet. Server client using an APIU",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -327,7 +320,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Application Logs📃",
-              "description": "",
+              "description": "Local application logs stored somewhere within the Web App Environment",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -451,7 +444,7 @@
             "data": {
               "type": "tm.Store",
               "name": "App Configuration⚙️",
-              "description": "",
+              "description": "App Configuration file, for example log4j.xml containing settings for Log4j package with Enabled JNDI Lookups, which effectively allows the exploit to happen",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -572,7 +565,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Log4j Logger📝",
-              "description": "",
+              "description": "Performs variable evaluation in strings and supports remote JNDI\nlookups, meaning it can fetch and execute remote code when processing strings with certain syntax in log messages",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -692,7 +685,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Attacker😈💻",
-              "description": "",
+              "description": "Attacker traffic, related traffic marked with solid arrows",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -992,6 +985,60 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payload with attackers executable",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "a2e8dce5-c158-41c5-a864-bf44ff8b992e"
+              ]
+            },
+            "labels": [
+              "Payload with attackers executable"
+            ],
+            "id": "a48d92c6-6556-4faf-9dab-42f4e01b71a9",
+            "source": {
+              "cell": "11eecd3c-2a51-49f6-8cd1-42a6e8810952",
+              "port": "4f8c5641-c290-4098-87b7-f6f4e245e0bc"
+            },
+            "target": {
+              "cell": "fba96bd2-536d-4d67-bc54-894498c3415e",
+              "port": "ab0693a9-f123-43f4-82f9-661802433419"
+            },
+            "vertices": [
+              {
+                "x": 990,
+                "y": 540
+              }
+            ]
+          },
+          {
             "position": {
               "x": 684.9999999999975,
               "y": 520
@@ -1099,7 +1146,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Attacker-Controlled Server😈🗄️",
-              "description": "",
+              "description": "External host outside target application environment that can respond with\nmalicious payloads (mainly compiled Java classes) upon JNDI lookup",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1216,7 +1263,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Client🧑‍🦱💻",
-              "description": "",
+              "description": "Legitimate Client traffic. Marked with dash-line, ommitted from rest of the Diagram for simplicity and because this tools doesnt allow to draw more lines easily...",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
