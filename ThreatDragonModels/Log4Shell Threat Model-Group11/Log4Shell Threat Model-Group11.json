@@ -19,123 +19,6 @@
         "cells": [
           {
             "position": {
-              "x": 560,
-              "y": 345
-            },
-            "size": {
-              "width": 230,
-              "height": 130
-            },
-            "attrs": {
-              "text": {
-                "text": "Attacker-Controlled Server😈🗄️"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "58a59ea9-69f4-42d5-b1ff-837b8b4e2d1b"
-                },
-                {
-                  "group": "right",
-                  "id": "4f8c5641-c290-4098-87b7-f6f4e245e0bc"
-                },
-                {
-                  "group": "bottom",
-                  "id": "53aa3c02-5a4e-43eb-bf3d-df726924ea03"
-                },
-                {
-                  "group": "left",
-                  "id": "6aa5c855-39f0-4f9f-8407-f22d51c902f9"
-                }
-              ]
-            },
-            "id": "0cde050c-ca3c-4779-b29d-2c3e9361536a",
-            "zIndex": 1,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Attacker-Controlled Server😈🗄️",
-              "description": "",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
               "x": 80,
               "y": 100
             },
@@ -253,8 +136,8 @@
           },
           {
             "position": {
-              "x": 625,
-              "y": 60
+              "x": 525,
+              "y": 80
             },
             "size": {
               "width": 100,
@@ -373,8 +256,8 @@
           },
           {
             "position": {
-              "x": 1020,
-              "y": 60
+              "x": 1050,
+              "y": 90
             },
             "size": {
               "width": 220,
@@ -497,8 +380,8 @@
           },
           {
             "position": {
-              "x": 1025,
-              "y": 180
+              "x": 1030,
+              "y": 380
             },
             "size": {
               "width": 210,
@@ -621,12 +504,12 @@
           },
           {
             "position": {
-              "x": 99.99999999999747,
-              "y": 310
+              "x": 749.9999999999975,
+              "y": 75
             },
             "size": {
-              "width": 100,
-              "height": 100
+              "width": 110,
+              "height": 120
             },
             "attrs": {
               "text": {
@@ -876,7 +759,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "API Request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -890,217 +773,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "API Request"
             ],
-            "id": "fb355e58-8948-4990-8a6c-e7154df0001a",
+            "id": "d8a4c161-bb93-4bcb-a696-c22f5bc938d0",
             "source": {
-              "x": 360,
-              "y": 90
+              "cell": "032180d9-c9d3-4d1c-bcaf-f13c161ba8c2",
+              "port": "4f8c5641-c290-4098-87b7-f6f4e245e0bc"
             },
             "target": {
-              "x": 520,
-              "y": 50
+              "cell": "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
+              "port": "a5ccb4a5-1afc-4256-92c4-1e6b5ebd9821"
             },
             "vertices": [
               {
-                "x": 400,
-                "y": 110
-              },
-              {
-                "x": 520,
-                "y": 210
+                "x": 470,
+                "y": 135
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1122,7 +811,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Log input",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1136,15 +825,15 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Log input"
             ],
-            "id": "4e3ab255-573c-427a-ba32-3a4c25f9ee41",
+            "id": "dff14249-05a2-465b-b767-bf083452435f",
             "source": {
-              "cell": "032180d9-c9d3-4d1c-bcaf-f13c161ba8c2",
-              "port": "4f8c5641-c290-4098-87b7-f6f4e245e0bc"
+              "cell": "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
+              "port": "1d359333-4c47-463f-9d05-8595571ab991"
             },
             "target": {
-              "cell": "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
+              "cell": "fba96bd2-536d-4d67-bc54-894498c3415e",
               "port": "a5ccb4a5-1afc-4256-92c4-1e6b5ebd9821"
             },
             "vertices": []
