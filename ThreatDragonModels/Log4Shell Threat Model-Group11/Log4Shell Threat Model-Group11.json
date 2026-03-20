@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Application🌐",
@@ -161,6 +161,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -244,7 +245,6 @@
               ]
             },
             "id": "9399af87-7a58-429d-95c8-6900927c83ff",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Application Logs📃",
@@ -285,6 +285,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -368,7 +369,6 @@
               ]
             },
             "id": "3f2884c3-c0db-40dc-8cce-5228940e2d64",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "App Configuration⚙️",
@@ -406,6 +406,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -489,7 +490,6 @@
               ]
             },
             "id": "fba96bd2-536d-4d67-bc54-894498c3415e",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Log4j Logger📝",
@@ -526,6 +526,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -609,7 +610,6 @@
               ]
             },
             "id": "3b0adfa3-3d26-49a3-a0ca-272845189f03",
-            "zIndex": 7,
             "data": {
               "type": "tm.Actor",
               "name": "Attacker😈💻",
@@ -858,9 +858,108 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "JNDI lookup",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "JNDI lookup"
+            ],
+            "id": "c21b7735-6862-4bdf-97f9-5c0cdff5e1ce",
+            "source": {
+              "cell": "fba96bd2-536d-4d67-bc54-894498c3415e",
+              "port": "ab0693a9-f123-43f4-82f9-661802433419"
+            },
+            "target": {
+              "cell": "11eecd3c-2a51-49f6-8cd1-42a6e8810952",
+              "port": "58a59ea9-69f4-42d5-b1ff-837b8b4e2d1b"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payload with attackers executable",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Payload with attacker executable"
+            ],
+            "id": "bd709775-ba25-4895-a2dc-d7d603313f62",
+            "source": {
+              "cell": "11eecd3c-2a51-49f6-8cd1-42a6e8810952",
+              "port": "4f8c5641-c290-4098-87b7-f6f4e245e0bc"
+            },
+            "target": {
+              "cell": "fba96bd2-536d-4d67-bc54-894498c3415e",
+              "port": "ab0693a9-f123-43f4-82f9-661802433419"
+            },
+            "vertices": [
+              {
+                "x": 1000,
+                "y": 420
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 455,
-              "y": 510
+              "x": 684.9999999999975,
+              "y": 480
             },
             "size": {
               "width": 220,
@@ -878,6 +977,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -961,7 +1061,6 @@
               ]
             },
             "id": "11eecd3c-2a51-49f6-8cd1-42a6e8810952",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Attacker-Controlled Server😈🗄️",
@@ -995,6 +1094,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1078,7 +1178,6 @@
               ]
             },
             "id": "d35ce783-37e6-481c-a11b-a633b815e9c3",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Client🧑‍🦱💻",
@@ -1090,53 +1189,6 @@
               "providesAuthentication": false,
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 13,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "JNDI Lookup request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "JNDI Lookup request"
-            ],
-            "id": "89e72799-77e5-4f76-a1c2-8ac762432a72",
-            "source": {
-              "cell": "f5e76c40-c18f-41c0-bd8b-b790a56dab24",
-              "port": "ab0693a9-f123-43f4-82f9-661802433419"
-            },
-            "target": {
-              "cell": "11eecd3c-2a51-49f6-8cd1-42a6e8810952",
-              "port": "58a59ea9-69f4-42d5-b1ff-837b8b4e2d1b"
-            },
-            "vertices": []
           }
         ]
       }
